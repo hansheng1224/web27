@@ -30,7 +30,8 @@
     }
     function getNews(id){
         $.get('./api/get_news.php',{id},(news)=>{
-            $("#.content").html(news)
+          
+            $("#content").html(news)
         })
     }
 </script>
