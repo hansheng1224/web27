@@ -22,7 +22,11 @@
                 <td>
                     <?php
                     if(isset($_SESSION['login'])){
-                        
+                        ?>
+                        <a href="index.php?do=vote&id=<?=$subj['id'];?>">參與投票</a>
+                        <?php
+                    }else{
+                        echo "請先登入";
                     }
                     ?>
                 </td>
